@@ -4,6 +4,49 @@ function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+//constructor
+/*function Store(){
+  this.name = '';
+  this.minCust = 0;
+  this.maxCust = 0;
+  this.avgCookies = 0;
+  this.custEachHour = [];
+  this.cookiesEachHour = [];
+  this.total 0;
+  this.calCustomersEachHour = function() {
+      for(var i = 0; i < hours.length; i++){
+        this.custEachHour.push(random(this.minCust, this.maxCust));
+      }
+    }
+  this.calCookiesEachHour = function(){
+    this.calCustomersEachHour();
+    for(var i = 0; i < hours.length; i++){
+      var everyHour = Math.ceil(this.custEachHour[i] * this.avgCookies);
+      this.cookiesEachHour.push(everyHour);
+      this.total = this.total + everyHour;
+      }
+  }
+  this.makeHtml = function() {
+    this.calCookiesEachHour()
+    var container = document.createElement('div');
+    container.innerHTML = '<p>' + pikePlace.name + '</p>';
+    document.body.appendChild(container);
+
+    var list = document.createElement('ul');
+    var listArr = [];
+
+    for (var i = 0; i < hours.length; i++) {
+      listArr.push('<li>' + hours[i] + ': ' + this.cookiesEachHour[i] + ' cookies </li>');
+      }
+
+    var fullList = listArr.join('');
+    list.innerHTML = fullList;
+    document.body.appendChild(list);
+  }
+
+}*/
+
+
 var pikePlace = {
   name: '1st and Pike',
   minCust: 6,
