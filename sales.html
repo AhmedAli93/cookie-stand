@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-
+    <title>Pat's Salmon Cookies</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
+    <h1 id="sales-header">Pat's Salmon Cookies</h1>
+    <p id="below-header">how many cookies to make every hour</p>
 
+<!--add form here-->
 
-    <h1>Pat's Salmon Cookies Locations</h1>
+    <form id="locations">
+      <fieldset>
+        <label for="location">Location name:</label>
+        <input type="text" name="location" placeholder="enter new location" required>
+      </fieldset>
 
-    <table id="cookiesoldtable"></table>
+      <fieldset>
+        <label for="min">Minimum customers per hour:</label>
+        <input type="number" name="min" placeholder="enter minimum number of customers per hour" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="max">Maximum customers per hour:</label>
+        <input type="number" name="max" placeholder="enter maximum number of customers per hour" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="avg">Average cookies per customer:</label>
+        <input type="number" name="avg" placeholder="enter the average cookies per customer" required>
+      </fieldset>
+
+    </form>
+
+    <table id="cookiesoldtable">
+    </table>
 
     <script src="app.js"></script>
-
   </body>
 </html>
